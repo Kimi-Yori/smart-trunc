@@ -1,0 +1,8 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.5, pytest-7.4.0, pluggy-1.3.0
+rootdir: /home/user/project
+collected 8 items
+
+... (8 lines omitted) ...
+
+============================== 8 passed in 0.12s ==============================

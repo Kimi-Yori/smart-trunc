@@ -1,0 +1,35 @@
+=== RUN   TestAdd
+--- PASS: TestAdd (0.00s)
+=== RUN   TestSubtract
+--- PASS: TestSubtract (0.00s)
+=== RUN   TestMultiply
+--- PASS: TestMultiply (0.00s)
+=== RUN   TestDivide
+--- PASS: TestDivide (0.00s)
+=== RUN   TestDivideByZero
+--- PASS: TestDivideByZero (0.00s)
+=== RUN   TestParseConfig
+--- PASS: TestParseConfig (0.00s)
+=== RUN   TestParseInvalidConfig
+--- PASS: TestParseInvalidConfig (0.00s)
+=== RUN   TestServerStart
+--- PASS: TestServerStart (0.02s)
+=== RUN   TestServerStop
+--- PASS: TestServerStop (0.01s)
+=== RUN   TestHandlerIndex
+--- PASS: TestHandlerIndex (0.00s)
+=== RUN   TestHandlerAPI
+--- FAIL: TestHandlerAPI (0.00s)
+    handler_test.go:45: Expected status 200, got 500
+    handler_test.go:46: Response body: {"error":"database connection failed"}
+=== RUN   TestHandlerNotFound
+--- PASS: TestHandlerNotFound (0.00s)
+=== RUN   TestMiddlewareAuth
+--- PASS: TestMiddlewareAuth (0.00s)
+=== RUN   TestMiddlewareLogging
+--- PASS: TestMiddlewareLogging (0.00s)
+=== RUN   TestMiddlewareCORS
+--- PASS: TestMiddlewareCORS (0.00s)
+FAIL
+exit status 1
+FAIL	mypackage/server	0.05s

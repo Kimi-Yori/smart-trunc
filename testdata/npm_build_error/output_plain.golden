@@ -1,0 +1,14 @@
+> my-app@1.0.0 build
+> next build
+
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+... (32 lines omitted) ...
+npm ERR! peer react@"^19.0.0" from some-package@2.0.0
+npm ERR! node_modules/some-package
+npm ERR!   some-package@"^2.0.0" from the root project
+
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+
+Build completed with errors.

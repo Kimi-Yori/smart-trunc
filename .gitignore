@@ -1,0 +1,18 @@
+# Binary
+smart-trunc
+dist/
+
+# Test coverage
+coverage.out
+
+# Internal dev notes
+TODO.md
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# OS
+.DS_Store

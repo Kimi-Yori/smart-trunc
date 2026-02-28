@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.5, pytest-7.4.0, pluggy-1.3.0
+rootdir: /home/user/project
+collected 25 items
+
+tests/test_auth.py::test_login_success PASSED
+tests/test_auth.py::test_login_invalid_password PASSED
+tests/test_auth.py::test_login_missing_email PASSED
+tests/test_auth.py::test_register_success PASSED
+tests/test_auth.py::test_register_duplicate PASSED
+tests/test_db.py::test_connection PASSED
+tests/test_db.py::test_query_users PASSED
+tests/test_db.py::test_query_orders PASSED
+tests/test_db.py::test_insert_user PASSED
+tests/test_db.py::test_delete_user PASSED
+tests/test_api.py::test_get_users PASSED
+tests/test_api.py::test_get_user_by_id PASSED
+tests/test_api.py::test_create_user PASSED
+tests/test_api.py::test_update_user PASSED
+tests/test_api.py::test_delete_user PASSED
+tests/test_api.py::test_get_orders PASSED
+tests/test_api.py::test_create_order FAILED
+tests/test_api.py::test_update_order PASSED
+tests/test_api.py::test_delete_order PASSED
+tests/test_api.py::test_search_users PASSED
+tests/test_api.py::test_pagination PASSED
+tests/test_api.py::test_rate_limiting PASSED
+tests/test_api.py::test_cors_headers PASSED
+tests/test_api.py::test_health_check PASSED
+tests/test_api.py::test_metrics_endpoint PASSED
+
+=================================== FAILURES ===================================
+________________________________ test_create_order _____________________________
+
+    def test_create_order():
+        response = client.post("/api/orders", json={
+            "user_id": 1,
+            "items": [{"product_id": 42, "quantity": 2}]
+        })
+>       assert response.status_code == 201
+E       AssertionError: assert 500 == 201
+E        +  where 500 = <Response [500]>.status_code
+
+tests/test_api.py:142: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_api.py::test_create_order - AssertionError: assert 500 == 201
+========================= 1 failed, 24 passed in 3.42s ========================

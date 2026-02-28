@@ -1,0 +1,8 @@
+... (21 lines omitted) ...
+--- FAIL: TestHandlerAPI (0.00s)
+    handler_test.go:45: Expected status 200, got 500
+    handler_test.go:46: Response body: {"error":"database connection failed"}
+... (8 lines omitted) ...
+FAIL
+exit status 1
+FAIL	mypackage/server	0.05s

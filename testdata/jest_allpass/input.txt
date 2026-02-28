@@ -1,0 +1,17 @@
+ PASS  src/math.test.ts
+  Math operations
+    ✓ should add two numbers (3 ms)
+    ✓ should subtract two numbers (1 ms)
+    ✓ should multiply two numbers (1 ms)
+    ✓ should divide two numbers (1 ms)
+
+ PASS  src/string.test.ts
+  String operations
+    ✓ should convert to uppercase (2 ms)
+    ✓ should convert to lowercase (1 ms)
+    ✓ should trim whitespace (1 ms)
+
+Test Suites:  2 passed, 2 total
+Tests:        7 passed, 7 total
+Snapshots:    0 total
+Time:         1.234 s

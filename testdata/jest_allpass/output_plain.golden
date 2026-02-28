@@ -1,0 +1,12 @@
+ PASS  src/math.test.ts
+  Math operations
+... (4 lines omitted) ...
+
+ PASS  src/string.test.ts
+  String operations
+... (3 lines omitted) ...
+
+Test Suites:  2 passed, 2 total
+Tests:        7 passed, 7 total
+Snapshots:    0 total
+Time:         1.234 s

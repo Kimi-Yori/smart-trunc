@@ -1,0 +1,45 @@
+> my-app@1.0.0 build
+> next build
+
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/25)
+info  - Generating static pages (6/25)
+info  - Generating static pages (12/25)
+info  - Generating static pages (18/25)
+info  - Generating static pages (25/25)
+info  - Finalizing page optimization...
+info  - Collecting build traces...
+
+Route (app)                              Size     First Load JS
+┌ ○ /                                    5.24 kB        89.2 kB
+├ ○ /about                               1.82 kB        85.8 kB
+├ ○ /api/auth/[...nextauth]              0 B            84.0 kB
+├ ● /blog                                3.45 kB        87.4 kB
+├ ● /blog/[slug]                         2.89 kB        86.9 kB
+├ ○ /contact                             2.01 kB        86.0 kB
+├ ○ /dashboard                           4.56 kB        88.5 kB
+├ ○ /login                               1.95 kB        85.9 kB
+├ ○ /register                            2.12 kB        86.1 kB
+├ ○ /settings                            3.67 kB        87.6 kB
+└ ○ /profile                             2.34 kB        86.3 kB
+
+npm ERR! code ERESOLVE
+npm ERR! ERESOLVE unable to resolve dependency tree
+npm ERR!
+npm ERR! While resolving: my-app@1.0.0
+npm ERR! Found: react@18.2.0
+npm ERR! node_modules/react
+npm ERR!   react@"^18.2.0" from the root project
+npm ERR!
+npm ERR! Could not resolve dependency:
+npm ERR! peer react@"^19.0.0" from some-package@2.0.0
+npm ERR! node_modules/some-package
+npm ERR!   some-package@"^2.0.0" from the root project
+
+npm ERR! Fix the upstream dependency conflict, or retry
+npm ERR! this command with --force or --legacy-peer-deps
+
+Build completed with errors.
